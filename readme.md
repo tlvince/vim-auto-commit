@@ -5,7 +5,7 @@
 ## Example
 
 ```vim
-autocmd BufWritePost */path/* call AutoCommit
+autocmd BufWritePost */path/* call AutoCommit()
 ```
 
 ## Author
