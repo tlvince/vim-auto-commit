@@ -3,7 +3,7 @@ function! AutoCommit()
   if v:shell_error
     return
   endif
-  let message = 'Updated ' . expand('%')
+  let message = 'Updated ' . expand('%:.')
   call system('git add ' . expand('%:p'))
   call system('git commit -m ' . shellescape(message, 1))
 endfun
